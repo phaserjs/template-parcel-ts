@@ -1,0 +1,38 @@
+{
+    "name": "template-parcel-ts",
+    "version": "0.0.1",
+    "description": "A Phaser 3 TypeScript template using Parcel 2 as the bundler.",
+    "source": "./index.html",
+    "browserslist": "> 0.25%, last 2 versions, not dead",
+    "scripts": {
+        "dev": "parcel index.html --no-cache --config ./parcel/.parcel.dev --open",
+        "build": "parcel build index.html --public-url _relativeroute_ --no-source-maps --log-level error --config ./parcel/.parcel.prod"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/phaserjs/template-parcel-ts.git"
+    },
+    "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
+    "license": "MIT",
+    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+    "bugs": {
+        "url": "https://github.com/phaserjs/template-parcel-ts/issues"
+    },
+    "homepage": "https://github.com/phaserjs/template-parcel-ts#readme",
+    "devDependencies": {
+        "@parcel/transformer-glsl": "^2.11.0",
+        "@parcel/transformer-typescript-tsc": "^2.11.0",
+        "express": "^4.18.2",
+        "parcel": "^2.11.0",
+        "parcel-reporter-clean-dist": "^1.0.4",
+        "parcel-reporter-static-files-copy": "^1.5.3",
+        "process": "^0.11.10",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "phaser": "^3.70.0"
+    },
+    "staticFiles": {
+        "staticPath": "public"
+    }
+}
