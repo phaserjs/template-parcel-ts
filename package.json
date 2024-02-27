@@ -1,6 +1,6 @@
 {
     "name": "template-parcel-ts",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "A Phaser 3 TypeScript template using Parcel 2 as the bundler.",
     "source": "./index.html",
     "browserslist": "> 0.25%, last 2 versions, not dead",
@@ -30,7 +30,7 @@
         "typescript": "^5.3.3"
     },
     "dependencies": {
-        "phaser": "^3.80.0"
+        "phaser": "^3.80.1"
     },
     "staticFiles": {
         "staticPath": "public"
