@@ -5,8 +5,10 @@
     "source": "./index.html",
     "browserslist": "> 0.25%, last 2 versions, not dead",
     "scripts": {
-        "dev": "parcel index.html --no-cache --config ./parcel/.parcel.dev --open",
-        "build": "parcel build index.html --public-url _relativeroute_ --no-source-maps --log-level error --config ./parcel/.parcel.prod"
+        "dev": "node log.js dev &parcel index.html --no-cache --config ./parcel/.parcel.dev --open",
+        "build": "node log.js build &parcel build index.html --public-url _relativeroute_ --no-source-maps --log-level error --config ./parcel/.parcel.prod",
+        "dev-nolog": "parcel index.html --no-cache --config ./parcel/.parcel.dev --open",
+        "build-nolog": "parcel build index.html --public-url _relativeroute_ --no-source-maps --log-level error --config ./parcel/.parcel.prod"
     },
     "repository": {
         "type": "git",
@@ -30,7 +32,7 @@
         "typescript": "^5.4.5"
     },
     "dependencies": {
-        "phaser": "^3.80.1"
+        "phaser": "^3.85.0"
     },
     "staticFiles": {
         "staticPath": "public"
